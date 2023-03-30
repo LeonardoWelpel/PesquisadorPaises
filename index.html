@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesquisador de Países</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark text-white">
+    <nav class="navbar bg-dark">
+        <div class="p-2">
+            <a class="navbar-brand" href="#">
+                <img src="assets/dnc.png" alt="Bootstrap" width="100">
+            </a>
+        </div>
+    </nav>
+    <h1 class="text-center">Country Search</h1>
+    <!--Botão-->
+    <div class=" container input-group mb-3">
+        <input type="text" id="country" class="form-control" placeholder="Country Name" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+        <button onclick="Procurar()" class="btn btn-outline-secondary bg-primary text-white" type="button" id="button-addon2">
+            <strong>Search</strong> </button>
+    </div>
+
+    <!--Card-->
+    <div id="card" class="card container text-dark text-center p-3" style="width: 18rem;">
+        <img id="bandeira" src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title" id="name">Name</h5>
+
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"> <strong>Capital</strong>
+                <p id="capital"> test</p>
+            </li>
+            <li class="list-group-item"><strong>Continent</strong>
+                <p id="cont"> test</p>
+            </li>
+            <li class="list-group-item"><strong>Population</strong>
+                <p id="pop"> test</p>
+            </li>
+        </ul>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
